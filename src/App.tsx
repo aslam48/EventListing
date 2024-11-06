@@ -124,7 +124,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
           {filteredEvents.slice(0, visibleEvents).map((event) => (
             <EventCard
               key={event.id} 
@@ -167,7 +167,7 @@ const App: React.FC = () => {
                 />
                 <div className="space-y-4">
                   <p className="text-gray-600">{selectedEvent.description}</p>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 gap-4">
                     <div className="space-y-2">
                       <div className="flex items-center text-gray-600">
                         <Calendar className="w-4 h-4 mr-2" />
